@@ -41,7 +41,7 @@ my_cnx=snowflake.connector.connect(
   account='dfcutai.rx20223',
   warehouse = 'pc_rivery_wh', 
   database = 'pc_rivery_db',
-  schema = 'public'
+  schema = 'public',
   role = 'pc_rivery_role')
 
 my_cur = my_cnx.cursor()
