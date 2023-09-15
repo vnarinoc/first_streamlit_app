@@ -42,7 +42,7 @@ my_cnx=snowflake.connector.connect(
   warehouse = 'pc_rivery_wh', 
   database = 'pc_rivery_db',
   schema = 'public',
-  role = 'pc_rivery_role')
+  role = 'accountadmin')
 
 my_cur = my_cnx.cursor()
 my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
